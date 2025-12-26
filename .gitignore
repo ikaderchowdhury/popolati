@@ -1,38 +1,76 @@
 # See https://help.github.com/articles/ignoring-files/ for more about ignoring files.
 
 # dependencies
-/.idea
-/node_modules
-/.pnp
-.pnp.js
-.yarn/install-state.gz
+/api/.idea
+/admin/.idea
+/landing/.idea
 
 /api/node_modules
+/admin/node_modules
+/landing/node_modules
+
+/api/.pnp
+/admin/.pnp
+/landing/.pnp
+
+/api.pnp.js
+/admin.pnp.js
+/landing.pnp.js
+
+/api.yarn/install-state.gz
+/admin.yarn/install-state.gz
+/landing.yarn/install-state.gz
+
+
+
 # testing
-/coverage
+/api/coverage
+/admin/coverage
+/landing/coverage
 
 # next.js
-/.next/
-/out/
+/api/.next/
+/admin/.next/
+/landing/.next/
+
+/api/out/
+/admin/out/
+/landing/out/
 
 # production
-/build
+/api/build
+/admin/build
+/landing/build
 
 # misc
-.DS_Store
-*.pem
+/api.DS_Store
+/admin.DS_Store
+/landing.DS_Store
+
+/api*.pem
+/admin*.pem
+/landing*.pem
 
 # debug
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+/api/npm-debug.log*
+/admin/npm-debug.log*
+/landing/npm-debug.log*
 
 # local env files
-.env*.local
+/api/.env*.local
+/admin/.env*.local
+/landing/.env*.local
 
 # vercel
-.vercel
+/api.vercel
+/admin.vercel
+/landing.vercel
 
 # typescript
-*.tsbuildinfo
-next-env.d.ts
+/api/*.tsbuildinfo
+/admin/*.tsbuildinfo
+/landing/*.tsbuildinfo
+
+/api/next-env.d.ts
+/admin/next-env.d.ts
+/landing/next-env.d.ts

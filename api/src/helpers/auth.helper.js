@@ -7,7 +7,13 @@ const getUser = (req) => {
   if (token == "Bearer") {
     throw new InvalidTokenException();
   }
-  const user = JSON.parse(atob(token.split(" ")[1].split(".")[1]));
-  return user;
+  try{
+    const user = JSON.parse(atob(token.split(" ")[1].split(".")[1]));
+    return user;
+  }catch(e){
+    return {id:0}
+  }
+  
 };
 module.exports = { getUser };
+ 
